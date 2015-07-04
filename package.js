@@ -1,13 +1,5 @@
 Package.describe({
-  name: 'hiukim:slack-client',
-  version: '1.0.3',
-  // Brief, one-line summary of the package.
-  summary: 'Slack Real Time Messaging API',
-  // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/clionelabs/slack-client.git',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  name: 'slack-client',
 });
 
 Package.onUse(function(api) {
@@ -18,10 +10,10 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('hiukim:slack-client');
+  api.use('slack-client');
   api.addFiles('slack-client-tests.js');
 });
 
 Npm.depends({
-  'slack-client': '1.4.0'
+  'slack-client': '1.4.1'
 });
