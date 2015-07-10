@@ -15,5 +15,5 @@ Package.onTest(function(api) {
 });
 
 Npm.depends({
-  'slack-client': '1.4.1'
+  'slack-client': '1.4.0'
 });
